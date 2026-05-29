@@ -17,7 +17,6 @@ import secureloanconsultantImg from "@/public/secureloanconsultant.png";
 import vitalvaultsImg from "@/public/vitalvaults.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
 
-// Navigation Links
 export const links = [
   { name: "Home", hash: "#home" },
   { name: "About", hash: "#about" },
@@ -28,9 +27,6 @@ export const links = [
   { name: "Contact", hash: "#contact" },
 ] as const;
 
-// =============================
-// EXPERIENCE DATA
-// =============================
 export const experiencesData = [
   {
     title: "Lead Qualification Chatbots",
@@ -82,9 +78,6 @@ export const experiencesData = [
   },
 ] as const;
 
-// =============================
-// PROJECTS DATA
-// =============================
 export const projectsData = [
   {
     title: "DeeptiSadhwani.com",
@@ -190,7 +183,7 @@ export const digitalMarketingData = [
   {
     company: "Invictus Outsourcing Solutions",
     subtitle: "Multi-niche Digital Marketing Agency",
-    dashboardImage: null, // ✅ REQUIRED
+    dashboardImage: null,
     posts: [
       "https://www.instagram.com/gadkaricars/",
       "https://www.instagram.com/biz2loan/",
@@ -206,7 +199,7 @@ export const digitalMarketingData = [
   {
     company: "House of Aanchal",
     subtitle: "Fashion Brand – Designer Wear",
-    dashboardImage: null, // ✅ REQUIRED
+    dashboardImage: null,
     posts: [
       "https://www.instagram.com/houseofaanchal_?igsh=OG5rajliMnAxbWJs",
       "https://www.instagram.com/reel/DSchSFLjD7F/?igsh=NzNmcjJsMXFsdDFq",
@@ -238,7 +231,7 @@ export const digitalMarketingData = [
   {
     company: "Paps and Pasta",
     subtitle: "Food & Lifestyle Brand",
-    dashboardImage: null, // ✅ REQUIRED
+    dashboardImage: null,
     posts: ["https://www.instagram.com/papsandpasta/"],
     points: [
       "Implemented SEO strategy for blogs",
@@ -249,7 +242,7 @@ export const digitalMarketingData = [
   {
     company: "Brandeur Studios (Agency Brand)",
     subtitle: "Creative & Branding Agency",
-    dashboardImage: null, // ✅ REQUIRED
+    dashboardImage: null,
     posts: [
       "https://www.instagram.com/brandeurstudiosofficial/",
       "https://www.instagram.com/reel/DRUR4f1jazv/",
@@ -264,11 +257,7 @@ export const digitalMarketingData = [
   },
 ] as const;
 
-// =============================
-// SKILLS DATA
-// =============================
 export const skillsData = [
-  // Frontend
   "HTML",
   "CSS",
   "JavaScript",
@@ -278,7 +267,6 @@ export const skillsData = [
   "Figma",
   "Shadcn UI",
   "Framer Motion",
-  // Backend
   "Node.js",
   "Express",
   "MongoDB",
@@ -289,12 +277,10 @@ export const skillsData = [
   "Microservices",
   "Kafka",
   "REST APIs",
-  // AI & Automation
   "Python",
   "AI / ML",
   "Chatbots",
   "WhatsApp Automation",
-  // Marketing & SEO
   "Google Ads",
   "Meta Ads",
   "YouTube Ads",

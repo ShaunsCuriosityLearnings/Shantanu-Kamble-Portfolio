@@ -16,7 +16,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <DigitalMarketingSection />
-      <Experience /> //automation chatbots
+      <Experience />
       <Contact />
     </main>
   );
