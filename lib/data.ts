@@ -1,7 +1,10 @@
 import React from "react";
+
+import { FaReact, FaBullhorn, FaRobot, FaChartLine } from "react-icons/fa";
+
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact, FaBullhorn } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import deeptiImg from "@/public/deepti.png";
@@ -18,10 +21,10 @@ import wordanalyticsImg from "@/public/wordanalytics.png";
 export const links = [
   { name: "Home", hash: "#home" },
   { name: "About", hash: "#about" },
-  { name: "Experience", hash: "#experience" },
+  { name: "Skills", hash: "#skills" },
   { name: "Projects", hash: "#projects" },
   { name: "Marketing", hash: "#digital-marketing" },
-  { name: "Skills", hash: "#skills" },
+  { name: "Automation", hash: "#automation" },
   { name: "Contact", hash: "#contact" },
 ] as const;
 
@@ -30,52 +33,52 @@ export const links = [
 // =============================
 export const experiencesData = [
   {
-    title: "B.Tech – Information Technology",
-    location: "A.C. Patil College of Engineering, Navi Mumbai",
+    title: "Lead Qualification Chatbots",
+    location: "AI Automation Systems",
     description:
-      "Completed B.Tech in Information Technology. Built strong foundations in programming, databases, software engineering, and problem solving. Actively worked on AI, app development, and automation projects.",
+      "Built intelligent lead qualification chatbots capable of handling 24/7 communication, customer support, service catalog exploration, and automated lead segmentation from Meta and Google Ads. Integrated CRM and database systems to improve ad optimization and automate lead conversions without manual cold calling.",
+    icon: React.createElement(FaRobot),
+    date: "AI Automation",
+  },
+  {
+    title: "Marketing & Sales Automation Bots",
+    location: "Business Automation",
+    description:
+      "Developed AI-powered marketing chatbots that function as virtual sales and support representatives. Created automated customer journeys, lead nurturing systems, appointment booking workflows, WhatsApp automations, and conversational sales funnels to improve customer engagement and retention.",
+    icon: React.createElement(FaBullhorn),
+    date: "Automation Workflows",
+  },
+  {
+    title: "AI Education & Student Management Systems",
+    location: "EdTech Automation",
+    description:
+      "Designed AI educational chatbots with secure login systems, AI-based doubt solving using LLMs, quiz management, attendance tracking, performance analytics, payment integrations, and parent dashboards. Enabled institutions to provide 24/7 support and automated student management.",
     icon: React.createElement(LuGraduationCap),
-    date: "2021 – 2024",
+    date: "AI + Education",
   },
   {
-    title: "Intern – Bluepen.co.in",
-    location: "Mumbai",
+    title: "Survey & Market Research Chatbots",
+    location: "Research Automation",
     description:
-      "Managed multiple client projects across web, Android, and API development. Coordinated freelancers, ensured quality checks, handled client communication, and delivered projects on time and within budget.",
-    icon: React.createElement(CgWorkAlt),
-    date: "Jan 2023 – Mar 2023",
+      "Created conversational survey systems that replace traditional forms with interactive chatbot experiences. Automated data collection, customer feedback analysis, lead capture, segmentation, and reporting workflows to improve response rates and market research efficiency.",
+    icon: React.createElement(FaChartLine),
+    date: "Conversational AI",
   },
   {
-    title: "Assistant Manager – Employpreneurs",
-    location: "Navi Mumbai",
+    title: "AI Workflow & Business Automation",
+    location: "Custom Integrations",
     description:
-      "Designed high-converting websites and landing pages, built automation workflows, and managed YouTube, Google, and Instagram ad campaigns. Improved lead generation by over 30% through funnel optimization and targeted outreach.",
-    icon: React.createElement(FaBullhorn),
-    date: "Jul 2024 – Nov 2024",
-  },
-  {
-    title: "Digital Marketing Executive – Growl Communications",
-    location: "Navi Mumbai",
-    description:
-      "Managed Google Ads and Meta Ads campaigns with monthly budget of ₹2L. Optimized lead funnels, improved UX/SEO, reduced CPL, and worked on Growl Communications, Research Alert, and Wealthy Ways websites.",
-    icon: React.createElement(FaBullhorn),
-    date: "Dec 2024 – Feb 2025",
-  },
-  {
-    title: "Digital Marketing Head – Invictus Outsourcing Solutions",
-    location: "Navi Mumbai",
-    description:
-      "Led international sales calls, closed digital marketing and development deals, executed SEO and social strategies, and delivered websites for Biz2Loan, BizNext, and BizNext Media.",
-    icon: React.createElement(FaBullhorn),
-    date: "Feb 2025 – Apr 2025",
-  },
-  {
-    title: "Software Developer & Digital Strategist – Brandeur Studios",
-    location: "Mumbai",
-    description:
-      "Core technical and creative contributor handling MERN, PHP, WordPress development, AI chatbots, automation workflows, performance marketing, podcast direction, and brand strategy. Working on DeeptiSadhwani, Bollywood Blink, DS Couture, and multiple client brands.",
+      "Built scalable AI automation workflows integrating APIs, CRMs, WhatsApp systems, databases, dashboards, and third-party platforms. Automated repetitive business operations, customer communication, lead management, and internal processes across multiple industries.",
     icon: React.createElement(FaReact),
-    date: "Apr 2025 – Present",
+    date: "System Automation",
+  },
+  {
+    title: "AI Chatbot Development & Integrations",
+    location: "Full Stack AI Systems",
+    description:
+      "Developed end-to-end AI chatbot systems using MERN, APIs, LLM integrations, Botpress, WhatsApp Cloud API, and custom backend architectures. Focused on creating scalable conversational systems capable of handling business operations, customer engagement, and intelligent automation workflows.",
+    icon: React.createElement(CgWorkAlt),
+    date: "AI Engineering",
   },
 ] as const;
 
@@ -290,8 +293,6 @@ export const skillsData = [
   "Python",
   "AI / ML",
   "Chatbots",
-  "Botpress",
-  "Voiceflow",
   "WhatsApp Automation",
   // Marketing & SEO
   "Google Ads",

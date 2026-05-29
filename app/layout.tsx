@@ -6,6 +6,7 @@ import Footer from "@/components/footer";
 import ThemeSwitch from "@/components/theme-switch";
 import ThemeContextProvider from "@/context/theme-context";
 import { Toaster } from "react-hot-toast";
+import "react-vertical-timeline-component/style.min.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} relative pt-28 sm:pt-36 bg-[rgb(240,245,242)] text-gray-950 dark:bg-[rgb(19,67,38)] dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} relative pt-28 sm:pt-36 bg-[rgb(255,255,255)] text-gray-950 dark:bg-[rgb(0,0,0)] dark:text-gray-50 dark:text-opacity-90`}
       >
         {/* Accent Blob 1 – Blue */}
         <div
@@ -44,8 +45,8 @@ export default function RootLayout({
             blur-[10rem] sm:w-[68.75rem]
             md:left-[-33rem] lg:left-[-28rem]
             xl:left-[-15rem] 2xl:left-[-5rem]
-            bg-[rgb(55,129,111)] opacity-40
-            dark:bg-[rgb(55,129,111)] dark:opacity-30
+            bg-[rgb(214,228,224)] opacity-40
+            dark:bg-[rgb(167,68,150)] dark:opacity-30
           "
         />
 

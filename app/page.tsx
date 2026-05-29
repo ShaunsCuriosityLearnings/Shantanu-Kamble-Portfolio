@@ -13,10 +13,10 @@ export default function Home() {
       <Intro />
       <SectionDivider />
       <About />
+      <Skills />
       <Projects />
       <DigitalMarketingSection />
-      <Skills />
-      <Experience />
+      <Experience /> //automation chatbots
       <Contact />
     </main>
   );

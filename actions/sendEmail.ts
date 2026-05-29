@@ -5,43 +5,49 @@ import { Resend } from "resend";
 import { validateString, getErrorMessage } from "@/lib/utils";
 import ContactFormEmail from "@/email/contact-form-email";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const apiKey = process.env.RESEND_API_KEY;
+
+if (!apiKey) {
+  throw new Error(
+    "RESEND_API_KEY is not defined. Please add it to your .env.local file.",
+  );
+}
+
+const resend = new Resend(apiKey);
 
 export const sendEmail = async (formData: FormData) => {
   const senderEmail = formData.get("senderEmail");
   const message = formData.get("message");
 
-  // simple server-side validation
+  // Server-side validation
   if (!validateString(senderEmail, 500)) {
     return {
       error: "Invalid sender email",
     };
   }
+
   if (!validateString(message, 5000)) {
     return {
       error: "Invalid message",
     };
   }
 
-  let data;
   try {
-    data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.dev>",
-      to: "bytegrad@gmail.com",
-      subject: "Message from contact form",
-      reply_to: senderEmail,
+    const data = await resend.emails.send({
+      from: "Portfolio Contact <onboarding@resend.dev>",
+      to: "shantanusudhirkamble.india@gmail.com", // Replace with your email
+      subject: "Message from Portfolio Contact Form",
+      reply_to: senderEmail as string,
       react: React.createElement(ContactFormEmail, {
-        message: message,
-        senderEmail: senderEmail,
+        message: message as string,
+        senderEmail: senderEmail as string,
       }),
     });
+
+    return { data };
   } catch (error: unknown) {
     return {
       error: getErrorMessage(error),
     };
   }
-
-  return {
-    data,
-  };
 };

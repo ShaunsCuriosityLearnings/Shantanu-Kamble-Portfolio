@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 html {
   --line-color: #e5e7eb;
 }
@@ -12,4 +11,10 @@ html.dark {
 
 .borderBlack {
   @apply border border-black/10;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(0, 180, 255, 0.08), transparent 35%),
+    #050816;
 }
