@@ -5,7 +5,6 @@ import { FaReact, FaBullhorn, FaRobot, FaChartLine } from "react-icons/fa";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 
-import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import deeptiImg from "@/public/deepti.png";
 import brandeurImg from "@/public/brandeur.png";
@@ -16,6 +15,10 @@ import bizz2loanImg from "@/public/bizz2loan.png";
 import secureloanconsultantImg from "@/public/secureloanconsultant.png";
 import vitalvaultsImg from "@/public/vitalvaults.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import sellphonecashImg from "@/public/sellphonecashcom.png";
+import sellyourphone24Img from "@/public/sellyourphone24.png";
+import tibroImg from "@/public/tibro.png";
+import ipvsImg from "@/public/ipvs.png";
 
 export const links = [
   { name: "Home", hash: "#home" },
@@ -80,6 +83,38 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "SellPhoneCash.com",
+    description:
+      "UAE-based instant mobile and electronics buyback platform offering real-time device valuation, doorstep pickup across Dubai & UAE, and instant payouts.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Buyback Portal", "Fintech"],
+    imageUrl: sellphonecashImg,
+    url: "https://sellphonecash.com",
+  },
+  {
+    title: "SellYourPhone24.com",
+    description:
+      "High-converting electronics trade-in and device valuation portal across Dubai & UAE with instant quotes, multi-device catalog, and 24h pickup workflows.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "Trade-In", "Automation"],
+    imageUrl: sellyourphone24Img,
+    url: "https://sellyourphone24.com",
+  },
+  {
+    title: "Tibro.in",
+    description:
+      "Curated international trade fair tours, luxury holidays, executive corporate travel, and knowledge journey platform for Indian travellers across 150+ countries.",
+    tags: ["Travel Tech", "UI/UX", "Corporate Tours", "Web Platform"],
+    imageUrl: tibroImg,
+    url: "https://tibro.in",
+  },
+  {
+    title: "IPVS 2026",
+    description:
+      "India's premier industrial exhibition portal for pumps, valves, and process systems at HITEX Hyderabad with visitor registration and exhibitor management.",
+    tags: ["React", "Tailwind CSS", "B2B Exhibition", "Event Portal"],
+    imageUrl: ipvsImg,
+    url: "https://www.ipvs.in/",
+  },
+  {
     title: "DeeptiSadhwani.com",
     description:
       "Celebrity portfolio website built using WordPress and Elementor for strong personal brand positioning.",
@@ -102,14 +137,6 @@ export const projectsData = [
     tags: ["MERN", "SEO", "CMS"],
     imageUrl: bollywoodblinkImg,
     url: "https://bollywoodblink.com",
-  },
-  {
-    title: "DS Couture",
-    description:
-      "Fashion eCommerce platform built using MERN stack and microservices architecture.",
-    tags: ["MERN", "Microservices", "Kafka", "eCommerce"],
-    imageUrl: corpcommentImg,
-    url: "https://dscouture.in",
   },
   {
     title: "Growl Communications",

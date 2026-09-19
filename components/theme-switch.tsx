@@ -3,9 +3,13 @@
 import { useTheme } from "@/context/theme-context";
 import React from "react";
 import { BsMoon, BsSun } from "react-icons/bs";
+import { usePathname } from "next/navigation";
 
 export default function ThemeSwitch() {
+  const pathname = usePathname();
   const { theme, toggleTheme } = useTheme();
+
+  if (pathname === "/v2") return null;
 
   return (
     <button
