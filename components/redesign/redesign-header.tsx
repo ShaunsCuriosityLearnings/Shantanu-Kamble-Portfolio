@@ -13,6 +13,25 @@ export default function RedesignHeader() {
         <span className="text-zinc-400">AI & PERFORMANCE MARKETER</span>
       </div>
 
+      {/* CENTER NAV LINKS */}
+      <nav className="hidden lg:flex items-center gap-6 text-[11px] font-mono tracking-wider text-zinc-400">
+        <Link href="#skills" className="hover:text-red-400 transition-colors">
+          SKILLS
+        </Link>
+        <Link href="#projects" className="hover:text-red-400 transition-colors">
+          PROJECTS
+        </Link>
+        <Link href="#digital-marketing" className="hover:text-red-400 transition-colors">
+          MARKETING
+        </Link>
+        <Link href="#automation" className="hover:text-red-400 transition-colors">
+          AUTOMATION
+        </Link>
+        <Link href="#contact" className="hover:text-red-400 transition-colors">
+          CONTACT
+        </Link>
+      </nav>
+
       {/* RIGHT CTA / AVAILABILITY */}
       <Link
         href="#contact"

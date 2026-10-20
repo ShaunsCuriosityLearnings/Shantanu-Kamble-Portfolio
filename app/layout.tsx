@@ -1,19 +1,28 @@
-import Header from "@/components/header";
 import "./globals.css";
-import { Inter } from "next/font/google";
-import ActiveSectionContextProvider from "@/context/active-section-context";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-switch";
-import ThemeContextProvider from "@/context/theme-context";
+import { Oswald, Caveat, Inter } from "next/font/google";
 import { Toaster } from "react-hot-toast";
-import "react-vertical-timeline-component/style.min.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const oswald = Oswald({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-oswald",
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  weight: ["600", "700"],
+  variable: "--font-caveat",
+});
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
 
 export const metadata = {
-  title: "Shantanu Kamble | Personal Portfolio",
+  title: "Shantanu Kamble | Software Developer & AI Systems",
   description:
-    "Digital Marketer, Performance Marketer & Software Developer with a focus on scalable systems and automation.",
+    "Editorial portfolio featuring Full-Stack Engineering, AI Systems, and Performance Marketing.",
 };
 
 export default function RootLayout({
@@ -22,44 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html
+      lang="en"
+      className={`!scroll-smooth ${inter.variable} ${oswald.variable} ${caveat.variable}`}
+    >
       <body
-        className={`${inter.className} relative pt-28 sm:pt-36 bg-[rgb(255,255,255)] text-gray-950 dark:bg-[rgb(0,0,0)] dark:text-gray-50 dark:text-opacity-90`}
+        className={`${inter.className} bg-[#070709] text-white selection:bg-red-600 selection:text-white antialiased min-h-screen overflow-x-hidden`}
       >
-        {/* Accent Blob 1 – Blue */}
-        <div
-          className="
-            absolute top-[-6rem] -z-10 right-[11rem]
-            h-[31.25rem] w-[31.25rem] rounded-full
-            blur-[10rem] sm:w-[68.75rem]
-            bg-[rgb(62,123,157)] opacity-40
-            dark:bg-[rgb(62,123,157)] dark:opacity-30
-          "
-        />
-
-        {/* Accent Blob 2 – Green */}
-        <div
-          className="
-            absolute top-[-1rem] -z-10 left-[-35rem]
-            h-[31.25rem] w-[50rem] rounded-full
-            blur-[10rem] sm:w-[68.75rem]
-            md:left-[-33rem] lg:left-[-28rem]
-            xl:left-[-15rem] 2xl:left-[-5rem]
-            bg-[rgb(214,228,224)] opacity-40
-            dark:bg-[rgb(167,68,150)] dark:opacity-30
-          "
-        />
-
-        <ThemeContextProvider>
-          <ActiveSectionContextProvider>
-            <Header />
-            {children}
-            <Footer />
-
-            <Toaster position="top-right" />
-            <ThemeSwitch />
-          </ActiveSectionContextProvider>
-        </ThemeContextProvider>
+        {children}
+        <Toaster position="top-right" />
       </body>
     </html>
   );

@@ -19,25 +19,6 @@ export default function RedesignProcessSkills({
   headingFontClass,
   scriptFontClass,
 }: RedesignProcessSkillsProps) {
-  const skillsList = [
-    "NEXT.JS",
-    "REACT",
-    "TYPESCRIPT",
-    "TAILWIND CSS",
-    "NODE.JS",
-    "PYTHON",
-    "AI CHATBOTS",
-    "WHATSAPP AUTOMATION",
-    "META ADS",
-    "GOOGLE ADS",
-    "SEO & FUNNELS",
-    "MERN STACK",
-    "REST APIS",
-    "SYSTEM ARCHITECTURE",
-    "UI/UX DESIGN",
-    "PERFORMANCE MARKETING",
-  ];
-
   const workProcess = [
     {
       title: "Discover",
@@ -115,22 +96,6 @@ export default function RedesignProcessSkills({
               <p className="text-[11px] text-zinc-400 mt-0.5 leading-relaxed">
                 Conversational AI Agents, Meta & Google Ads, WhatsApp Automation Systems
               </p>
-            </div>
-          </div>
-
-          <div>
-            <p className="text-[10px] uppercase tracking-widest text-red-500 font-bold mb-3">
-              PRIMARY STACK PILLS
-            </p>
-            <div className="flex flex-wrap gap-1.5">
-              {skillsList.map((skill, index) => (
-                <span
-                  key={index}
-                  className="text-[9px] font-mono font-medium px-2.5 py-1 rounded-full border border-zinc-800 bg-zinc-950/60 text-zinc-300 hover:text-white hover:border-red-500/40 hover:bg-red-950/20 transition-colors cursor-default"
-                >
-                  {skill}
-                </span>
-              ))}
             </div>
           </div>
         </div>

@@ -182,9 +182,74 @@ export const projectsData = [
 
 export const digitalMarketingData = [
   {
+    company: "Tibro Tours (Tibro.in)",
+    subtitle: "Luxury Corporate & Trade Fair Delegations",
+    dashboardImage: "/Tibro meta ads .png",
+    dashboards: [
+      { label: "Meta (2.1M+ Impr)", url: "/Tibro meta ads .png" },
+      { label: "LinkedIn (₹4.24L)", url: "/Tibro Linkedin Ads.png" },
+      { label: "Google (97% Opt)", url: "/Tibro google Ads part1.png" },
+    ],
+    channels: ["LinkedIn B2B", "Meta Ads", "Google Ads"],
+    posts: ["https://tibro.in"],
+    points: [
+      "₹4.24L+ spent on LinkedIn Ads generating 760K+ impressions and 6,646 qualified clicks from CXOs & business leaders",
+      "2.1M+ Meta impressions with 990K+ reach; produced 1,300+ leads (including 730 HNI leads at ₹36/lead for Luxury Cruise)",
+      "Multi-expo Google Ads funnels across Medica, ITMA Asia, and Gulfood with 92%–97.5% optimization scores",
+    ],
+  },
+  {
+    company: "IPVS 2026 Exhibition",
+    subtitle: "Premier Industrial Pumps & Valves Expo (HITEX)",
+    dashboardImage: "/IPVS google Ads .png",
+    dashboards: [
+      { label: "Meta Leads (4,877 Leads)", url: "/IPVS google Ads .png" },
+      { label: "LinkedIn B2B (252 Leads)", url: "/IPVS Linkedin Ads.png" },
+      { label: "Google PMax (1.1M+ Impr)", url: "/IPVS google Ads.png" },
+    ],
+    channels: ["Meta Lead Forms", "LinkedIn B2B", "Google PMax"],
+    posts: ["https://www.ipvs.in/"],
+    points: [
+      "Generated 4,877 verified form leads at an ultra-efficient ₹25.19 per lead across 1.72M+ impressions",
+      "LinkedIn B2B decision-maker targeting: 252 leads at $4.03/lead (96.45% below industry benchmark) engaging Directors & CXOs",
+      "Over 1.1M Google Ads impressions with 791K+ interactions at an astonishing ₹1.15 Avg. CPC",
+    ],
+  },
+  {
+    company: "SellPhoneCash.com",
+    subtitle: "Electronics Buyback & ReCommerce (Dubai & UAE)",
+    dashboardImage: "/Sellphonecash google metric.png",
+    dashboards: [
+      { label: "Google Ads (AED 170K+ Value)", url: "/Sellphonecash google metric.png" },
+    ],
+    channels: ["Google Search", "High-Intent Search", "FinTech"],
+    posts: ["https://sellphonecash.com"],
+    points: [
+      "Generated AED 170,566+ in total conversion value with 62 high-intent buyback conversions in 30 days",
+      "Achieved an exceptional 18.26% Click-Through Rate (CTR) and 10.65% Conversion Rate",
+      "Optimized cost per acquisition to AED 47.53 on AED 2,946 total monthly ad spend (~57.8x ROAS)",
+    ],
+  },
+  {
+    company: "SellYourPhone24.com",
+    subtitle: "Mobile Trade-In & Doorstep Pickup (Dubai & Abu Dhabi)",
+    dashboardImage: "/Sellyourphone24 google metrics.png",
+    dashboards: [
+      { label: "Google Ads (Dubai & Abu Dhabi)", url: "/Sellyourphone24 google metrics.png" },
+    ],
+    channels: ["Google Ads", "Local UAE Search", "Trade-In"],
+    posts: ["https://sellyourphone24.com"],
+    points: [
+      "Targeted high-intent search campaigns across Dubai and Abu Dhabi for immediate electronics valuation",
+      "Maintained an efficient AED 7.07 Average CPC with 2,596 targeted impressions and 340 qualified clicks",
+      "Delivered 20+ direct conversion actions with 24-hour doorstep inspection and instant payout workflows",
+    ],
+  },
+  {
     company: "Employpreneurs",
     subtitle: "Career Coaching & Employability Brand",
     dashboardImage: "/employpr.png",
+    channels: ["Marketing Automation", "Lead Gen"],
     posts: ["https://www.instagram.com/p/DFu0GHqyFkz/"],
     points: [
       "Supported digital marketing initiatives and campaign execution",
@@ -195,22 +260,23 @@ export const digitalMarketingData = [
     company: "Growl Communication Pvt. Ltd.",
     subtitle: "Health Insurance & Personal Loan Sector",
     dashboardImage: "/GrowlsFBleads.png",
+    channels: ["Meta Ads", "Google Ads", "Finance"],
     posts: [
       "https://www.instagram.com/p/DFH4N5bzCAR/",
       "https://www.instagram.com/p/DDzATpjtyjI/",
       "https://www.instagram.com/p/DDokVpuzH6M/",
     ],
     points: [
-      "Managed Facebook & Google Ads campaigns",
-      "Contributed to website promotion strategies",
-      "Supported research-based content platforms",
-      "Research Alert Website & Research Buzz Website",
+      "Managed Facebook & Google Ads campaigns driving high-intent financial leads",
+      "Contributed to website promotion strategies and lead conversion funnels",
+      "Supported research-based content platforms (Research Alert & Research Buzz)",
     ],
   },
   {
     company: "Invictus Outsourcing Solutions",
     subtitle: "Multi-niche Digital Marketing Agency",
     dashboardImage: null,
+    channels: ["Meta Ads", "Social Positioning"],
     posts: [
       "https://www.instagram.com/gadkaricars/",
       "https://www.instagram.com/biz2loan/",
@@ -218,15 +284,16 @@ export const digitalMarketingData = [
       "https://www.instagram.com/biznextmedia/",
     ],
     points: [
-      "Social media management",
-      "Meta Ads execution",
-      "Profile optimization & brand positioning",
+      "Social media management and profile optimization",
+      "Meta Ads execution and cross-niche campaign strategy",
+      "Brand positioning for automotive and financial clients",
     ],
   },
   {
     company: "House of Aanchal",
     subtitle: "Fashion Brand – Designer Wear",
     dashboardImage: null,
+    channels: ["Meta Ads", "Organic Growth"],
     posts: [
       "https://www.instagram.com/houseofaanchal_?igsh=OG5rajliMnAxbWJs",
       "https://www.instagram.com/reel/DSchSFLjD7F/?igsh=NzNmcjJsMXFsdDFq",
@@ -234,14 +301,15 @@ export const digitalMarketingData = [
     ],
     points: [
       "Planned and executed organic + inorganic growth strategy",
-      "Ran Meta Ads campaigns for brand visibility",
-      "Improved engagement and reach",
+      "Ran Meta Ads campaigns for luxury brand visibility and sales",
+      "Improved engagement rates, viral reach, and influencer traction",
     ],
   },
   {
     company: "Deep Tea with Deepti",
-    subtitle: "Podcast & Personal Brand",
+    subtitle: "Podcast & Celebrity Personal Brand",
     dashboardImage: "/deepteawtthdeeptiads.png",
+    channels: ["Meta Ads", "YouTube Ads", "Branding"],
     posts: [
       "https://www.instagram.com/deepteawithdeepti/",
       "https://www.instagram.com/reel/DQop0mNiEtj/",
@@ -249,37 +317,37 @@ export const digitalMarketingData = [
       "https://www.instagram.com/reel/DRt9FfcCEYg/",
     ],
     points: [
-      "Ran Meta Ads & YouTube Ads campaigns",
-      "Built pitching strategy and brand positioning",
-      "Created motivational and narrative video concepts",
-      "Handled organic and paid growth strategies",
+      "Ran Meta Ads & YouTube Ads campaigns for podcast reach",
+      "Built pitching strategy, narrative video concepts, and brand positioning",
+      "Handled organic and paid audience acquisition strategies",
     ],
   },
   {
     company: "Paps and Pasta",
     subtitle: "Food & Lifestyle Brand",
     dashboardImage: null,
+    channels: ["SEO", "Content Marketing"],
     posts: ["https://www.instagram.com/papsandpasta/"],
     points: [
-      "Implemented SEO strategy for blogs",
-      "Managed blog posting & content optimization",
-      "Targeted traffic growth through search engines",
+      "Implemented SEO strategy and on-page optimization for blogs",
+      "Managed editorial calendar and food content scheduling",
+      "Targeted organic traffic growth through search engines",
     ],
   },
   {
     company: "Brandeur Studios (Agency Brand)",
     subtitle: "Creative & Branding Agency",
     dashboardImage: null,
+    channels: ["Creative Strategy", "Pitch Decks"],
     posts: [
       "https://www.instagram.com/brandeurstudiosofficial/",
       "https://www.instagram.com/reel/DRUR4f1jazv/",
       "https://www.instagram.com/p/DRUV1PTAd6-/",
     ],
     points: [
-      "Creative strategist for daily initiatives",
-      "Designed professional brand page structure",
-      "Curated pitch decks industry-wise and niche-wise",
-      "Planned content calendars and campaign themes",
+      "Creative strategist for daily branding and client initiatives",
+      "Designed professional pitch decks industry-wise and niche-wise",
+      "Planned content calendars and high-converting campaign themes",
     ],
   },
 ] as const;

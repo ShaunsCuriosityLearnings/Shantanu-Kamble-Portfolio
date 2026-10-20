@@ -3,6 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import { FiPlus, FiMapPin } from "react-icons/fi";
 
@@ -24,21 +25,22 @@ export default function RedesignHero({
 
   return (
     <section className="relative w-full px-[4%] sm:px-[5%] pt-1 pb-8 overflow-hidden">
-      {/* 1. GIANT BACKGROUND TEXT "PORTFOLIO" */}
-      <div className="absolute inset-x-0 top-1 select-none pointer-events-none flex justify-center z-0 overflow-hidden">
+      {/* 1. GIANT EDITORIAL HEADER TEXT "PORTFOLIO" */}
+      <div className="absolute inset-x-0 top-1 sm:top-1 select-none pointer-events-none flex justify-center z-0 overflow-hidden">
         <span
           className={`
             ${headingFontClass}
-            text-[17vw]
+            text-[21vw]
+            sm:text-[17vw]
             leading-none
-            tracking-tighter
+            tracking-tight
             font-black
-            text-[#750d1a]
-            opacity-90
+            text-[#8e1220]
+            opacity-95
             transform
             scale-y-110
           `}
-          style={{ textShadow: "0 0 100px rgba(185, 28, 28, 0.3)" }}
+          style={{ textShadow: "0 0 80px rgba(225, 29, 72, 0.45)" }}
         >
           PORTFOLIO
         </span>
@@ -48,7 +50,7 @@ export default function RedesignHero({
       <div className="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-red-600/10 blur-[160px] rounded-full pointer-events-none -z-10" />
 
       {/* 3. HERO CONTENT GRID */}
-      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[480px] lg:min-h-[520px] pt-4 sm:pt-6">
+      <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center min-h-[480px] lg:min-h-[520px] pt-3 sm:pt-6">
         
         {/* LEFT COLUMN */}
         <motion.div
@@ -91,68 +93,30 @@ export default function RedesignHero({
           </div>
         </motion.div>
 
-        {/* CENTER COLUMN: EDITORIAL PORTRAIT */}
+        {/* CENTER COLUMN: REAL EDITORIAL PORTRAIT (OFFSET ON MOBILE TO KEEP 'PORTFOLIO' BOLDLY VISIBLE) */}
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.1 }}
-          className="lg:col-span-4 relative flex justify-center items-end order-1 lg:order-2 min-h-[340px] sm:min-h-[440px]"
+          className="lg:col-span-4 relative flex justify-center items-end order-1 lg:order-2 mt-12 sm:mt-10 lg:mt-0"
         >
-          <div className="relative w-full max-w-[320px] sm:max-w-[370px] aspect-[3/4] flex items-end justify-center">
-            {/* Red rim lighting */}
-            <div className="absolute inset-0 bg-gradient-to-t from-red-600/25 via-transparent to-transparent rounded-3xl blur-2xl pointer-events-none" />
+          <div className="relative w-full max-w-[280px] sm:max-w-[320px] lg:max-w-[340px] aspect-[3/4] rounded-2xl overflow-hidden border border-zinc-800/80 shadow-[0_20px_50px_rgba(0,0,0,0.85)] group">
+            {/* Ambient sunset/crimson glow behind portrait */}
+            <div className="absolute -inset-2 bg-gradient-to-t from-red-600/30 via-red-900/10 to-transparent rounded-3xl blur-2xl pointer-events-none -z-10" />
 
-            <div className="relative z-10 w-full h-full rounded-2xl overflow-hidden flex flex-col justify-end">
-              <div className="relative w-full h-full bg-gradient-to-t from-black via-zinc-900/60 to-transparent flex items-end justify-center">
-                <svg
-                  viewBox="0 0 400 520"
-                  className="w-full h-auto max-h-[460px] object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.95)]"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  {/* Jacket */}
-                  <path
-                    d="M60 520 C70 420, 110 330, 150 280 C170 260, 230 260, 250 280 C290 330, 330 420, 340 520 Z"
-                    fill="#111115"
-                  />
-                  {/* Lapels */}
-                  <path
-                    d="M150 280 L185 390 L200 390 L215 390 L250 280 L230 265 L200 310 L170 265 Z"
-                    fill="#1a1a20"
-                  />
-                  <path d="M185 390 L200 480 L215 390 Z" fill="#0c0c0f" />
-                  {/* Collar */}
-                  <path
-                    d="M175 270 Q200 300 225 270 L220 250 Q200 260 180 250 Z"
-                    fill="#08080a"
-                  />
-                  {/* Neck */}
-                  <rect x="180" y="210" width="40" height="60" rx="8" fill="#d97768" opacity="0.85" />
-                  {/* Head */}
-                  <path
-                    d="M160 160 C160 230, 175 240, 200 240 C225 240, 240 230, 240 160 C240 110, 225 80, 200 80 C175 80, 160 110, 160 160 Z"
-                    fill="#e28878"
-                  />
-                  {/* Dark hair */}
-                  <path
-                    d="M150 140 C145 90, 175 50, 200 50 C225 50, 255 90, 250 140 C245 110, 230 80, 200 80 C170 80, 155 110, 150 140 Z"
-                    fill="#08080a"
-                  />
-                  <path
-                    d="M152 110 Q200 70 248 110 Q240 90 200 75 Q160 90 152 110 Z"
-                    fill="#151518"
-                  />
-                  {/* Sunglasses */}
-                  <rect x="165" y="145" width="32" height="18" rx="4" fill="#000000" />
-                  <rect x="203" y="145" width="32" height="18" rx="4" fill="#000000" />
-                  <rect x="195" y="150" width="10" height="4" fill="#111111" />
-                  <line x1="168" y1="147" x2="190" y2="159" stroke="#ffffff" strokeWidth="1.5" opacity="0.4" />
-                  <line x1="206" y1="147" x2="228" y2="159" stroke="#ffffff" strokeWidth="1.5" opacity="0.4" />
-                  <line x1="190" y1="205" x2="210" y2="205" stroke="#993d3d" strokeWidth="2.5" strokeLinecap="round" />
-                </svg>
-              </div>
-              <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#070709] via-[#070709]/85 to-transparent pointer-events-none" />
-            </div>
+            {/* REAL PORTRAIT PHOTO */}
+            <Image
+              src="/shantanu-hero.jpg"
+              alt="Shantanu Kamble"
+              fill
+              priority
+              sizes="(max-width: 640px) 280px, (max-width: 1024px) 320px, 340px"
+              className="object-cover object-center group-hover:scale-105 transition-transform duration-700 ease-out"
+            />
+
+            {/* Subtle luxury editorial gradient overlays */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#070709] via-transparent to-black/20 pointer-events-none" />
+            <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-[#070709] via-[#070709]/80 to-transparent pointer-events-none" />
           </div>
         </motion.div>
 

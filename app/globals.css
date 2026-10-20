@@ -1,20 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 html {
-  --line-color: #e5e7eb;
-}
-
-html.dark {
-  --line-color: rgba(255, 255, 255, 0.2);
-}
-
-.borderBlack {
-  @apply border border-black/10;
+  color-scheme: dark;
 }
 
 body {
-  background:
-    radial-gradient(circle at top, rgba(0, 180, 255, 0.08), transparent 35%),
-    #050816;
+  background-color: #070709;
+  color: #ffffff;
+}
+
+/* Security rules to protect proprietary dashboard images & creatives */
+.protected-image {
+  -webkit-touch-callout: none !important;
+  -webkit-user-select: none !important;
+  -khtml-user-select: none !important;
+  -moz-user-select: none !important;
+  -ms-user-select: none !important;
+  user-select: none !important;
+  -webkit-user-drag: none !important;
+}
+
+@media print {
+  .protected-image,
+  .protected-modal,
+  #digital-marketing img {
+    display: none !important;
+    visibility: hidden !important;
+  }
 }
